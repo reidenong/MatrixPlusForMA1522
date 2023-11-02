@@ -139,40 +139,218 @@ Vt =
 
 ```findEigSpace(matrix A, int EigVal)``` and ```findEigVec(matrix A, int eigVal)``` perform similar functions to find the space and vector associated with the eigenvalue respectively. ```findEigSpace``` uses ```null(sym(EigVal * I - A))``` to determine the Eigenspace, and findEigVec gives the first basis vector of the same Eigenspace.
 ```
+>> A = [1 1 0; 1 1 0; 0 0 2]
+
+A =
+
+     1     1     0
+     1     1     0
+     0     0     2
+
+>> eig(sym(A))
+ 
+ans =
+ 
+0
+2
+2
+ 
+>> findEigSpace(A, 2)
+ 
+ans =
+ 
+[1, 0]
+[1, 0]
+[0, 1]
+ 
+>> findEigVec(A, 2)
+ 
+ans =
+ 
+1
+1
+0
 ```
 
 <br />
 
 ```findEigPoly(matrix A)``` uses the formula ```CharacteristicPolynomial = det(sym(xI - A))``` with symbolic x to return the factorized polynomial of ```A```.
 ```
+>> A = [2 -1 5; -1 2 5; 5 5 -4]
+
+A =
+
+     2    -1     5
+    -1     2     5
+     5     5    -4
+
+>> findEigPoly(A)
+ 
+det(xI - A) = 
+x^3 - 63*x + 162
+ 
+[x - 3, x + 9, x - 6]
 ```
 
 <br />
 
 ```gramSchmidt(matrix A)``` uses QR Decomposition to turn a collection of linearly independent column vectors into a basis of orthonormal vectors. Column vectors ```u1```,```u2```, ... are pased in as a matrix ```U``` where ```U = (u1 u2 u3 ... )```. Product is not guaranteed when vectors passed in are not already linearly independent, and program will throw a warning.
 ```
+>> u1 = [1; 2; 1]; u2 = [1; 1; 1]; u3 = [1; 1; 2];
+>> S = [u1 u2 u3]
+
+S =
+
+     1     1     1
+     2     1     1
+     1     1     2
+
+>> Q = gramSchmidt(S)
+ 
+v1 : 
+v1 has factor 6^(1/2)/6
+ 
+1
+2
+1
+ 
+ 
+v2 : 
+v2 has factor 3^(1/2)/3
+ 
+ 1
+-1
+ 1
+ 
+ 
+v3 : 
+v3 has factor 2^(1/2)/2
+ 
+-1
+ 0
+ 1
+ 
+ 
+Q =
+ 
+[6^(1/2)/6,  3^(1/2)/3, -2^(1/2)/2]
+[6^(1/2)/3, -3^(1/2)/3,          0]
+[6^(1/2)/6,  3^(1/2)/3,  2^(1/2)/2]
 ```
 
 <br />
 
 ```findDiag(matrix A)``` produces a possible diagonalization of matrix ```A``` using the library ```eig()``` function. I lack a complete understanding of why this works, only that it does, so use with caution. When a non-diagonalizable matrix is passed in, the program throws an error to prompt the user to check for diagonalizability through other methods. While it is pretty conclusive that ```findDiag``` will throw an error if the matrix given is not diagonalizable, it is *not* guaranteed that the given matrix is not diagonalizable if an error is thrown, so keep that in mind. In general, with warning, check for diagonzalization through other methods.
 ```
+>> B = [6 -3; -3 14]
+
+B =
+
+     6    -3
+    -3    14
+
+>> [P D] = findDiag(B)
+ 
+    Using [P D] = findDiag(A), 
+    A = P x D x P^-1 where
+ 
+P =
+ 
+[3, -1/3]
+[1,    1]
+ 
+ 
+D =
+ 
+[5,  0]
+[0, 15]
 ```
 
 <br />
 
 ```leastSquare(matrix A, columnVector b)``` solves for ```A'Ax = A'b```, a least squares solution for the equation ```Ax = b```. Returns the solution set in the form of a matrix.
 ```
+>> A = [1 1 0 1; 0 1 1 0; 1 2 1 1]; b = [1; 1; 1];
+>> solutionSet = leastSquare(A, b)
+ 
+Solving for A'Ax = A'b, we do rref([A'*A A'*b]) to get solution set: 
+ 
+solutionSet =
+ 
+[1, 0, -1, 1,   0]
+[0, 1,  1, 0, 2/3]
+[0, 0,  0, 0,   0]
+[0, 0,  0, 0,   0]
 ```
 
 <br />
 
 Sample Usage of Row Elementary Operation functions
 ```
+>> A = eye(3)
+
+A =
+
+     1     0     0
+     0     1     0
+     0     0     1
+
+>> A = swap(A, 1, 2)
+ 
+    Row Swap: 
+        R1 <-> R2
+
+A =
+
+     0     1     0
+     1     0     0
+     0     0     1
+
+>> A = rsum(A, 3, 2, 5)
+ 
+    Row Sum:
+        R3 += 5 * R2
+
+A =
+
+     0     1     0
+     1     0     0
+     5     0     1
+
+>> A = mult(A, 3, 10)
+ 
+    Scalar Multiplication:
+        R3 = 10 * R3
+
+A =
+
+       0              1              0       
+       1              0              0       
+      50              0             10   
 ```
 
 <br />
 
 Sample Usage of Matrix Manipulation functions
 ```
+>> A = eye(2)
+
+A =
+
+       1              0       
+       0              1       
+
+>> row = getRow(A, 1)
+
+row =
+
+       1              0       
+
+>> col = getCol(A, 2)
+
+col =
+
+       0       
+       1       
+
 ```
