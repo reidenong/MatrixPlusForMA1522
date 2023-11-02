@@ -32,6 +32,25 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with steps
 
 ### Sample Usage
+**Basic Matrix Manipulation**
 ```
+>> A = eye(2)
 
+A =
+
+     1     0
+     0     1
+
+>> B = getRow(A, 1)
+
+B =
+
+     1     0
+
+>> C = getCol(A, 2)
+
+C =
+
+     0
+     1
 ```
