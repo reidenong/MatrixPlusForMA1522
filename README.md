@@ -37,8 +37,8 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 
 <details>
 <summary>Basic Matrix Manipulation</summary>
-```
->> A = eye(2)
+
+> A = eye(2)
 
 A =
 
@@ -60,7 +60,3 @@ C =
 ```
 </details>
 
-**Basic Matrix Manipulation**
-```
-
-```
