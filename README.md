@@ -31,10 +31,8 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - ```findEigVec(matrix A, int eigVal)``` : Returns a eigenvector for a given eigenvalue
 - ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with steps
 
-
-
 ### Method Documentation
-```autoSVD(matrix A)``` performs the Singular Value Decomposition algorithm and returns [U S Vt] where U is a orthogonal matrix, S is a diagonal matrix, and Vt is a orthogonal matrix. Orthogonality of the matrices can be verified by ```A'*A == I```.
+```autoSVD(matrix A)``` performs the Singular Value Decomposition algorithm and returns ```[U S Vt]``` where U is a orthogonal matrix, S is a diagonal matrix, and Vt is a orthogonal matrix. Orthogonality of the matrices can be verified by ```A'*A == I```.
 ```
 >> A = [4 11 14; 8 7 -2]
 
@@ -137,3 +135,44 @@ Vt =
 [ 2/3, -2/3, 1/3]
 ```
 
+<br />
+
+```findEigSpace(matrix A, int EigVal)``` and ```findEigVec(matrix A, int eigVal)``` perform similar functions to find the space and vector associated with the eigenvalue respectively. ```findEigSpace``` uses ```null(sym(EigVal * I - A))``` to determine the Eigenspace, and findEigVec gives the first basis vector of the same Eigenspace.
+```
+```
+
+<br />
+
+```findEigPoly(matrix A)``` uses the formula ```CharacteristicPolynomial = det(sym(xI - A))``` with symbolic x to return the factorized polynomial of ```A```.
+```
+```
+
+<br />
+
+```gramSchmidt(matrix A)``` uses QR Decomposition to turn a collection of linearly independent column vectors into a basis of orthonormal vectors. Column vectors ```u1```,```u2```, ... are pased in as a matrix ```U``` where ```U = (u1 u2 u3 ... )```. Product is not guaranteed when vectors passed in are not already linearly independent, and program will throw a warning.
+```
+```
+
+<br />
+
+```findDiag(matrix A)``` produces a possible diagonalization of matrix ```A``` using the library ```eig()``` function. I lack a complete understanding of why this works, only that it does, so use with caution. When a non-diagonalizable matrix is passed in, the program throws an error to prompt the user to check for diagonalizability through other methods. While it is pretty conclusive that ```findDiag``` will throw an error if the matrix given is not diagonalizable, it is *not* guaranteed that the given matrix is not diagonalizable if an error is thrown, so keep that in mind. In general, with warning, check for diagonzalization through other methods.
+```
+```
+
+<br />
+
+```leastSquare(matrix A, columnVector b)``` solves for ```A'Ax = A'b```, a least squares solution for the equation ```Ax = b```. Returns the solution set in the form of a matrix.
+```
+```
+
+<br />
+
+Sample Usage of Row Elementary Operation functions
+```
+```
+
+<br />
+
+Sample Usage of Matrix Manipulation functions
+```
+```
