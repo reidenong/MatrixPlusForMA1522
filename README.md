@@ -37,8 +37,6 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 
 <details>
 <summary>Basic Matrix Manipulation</summary>
-<br>
-<br><br>
 <pre>
 >> A = eye(2)
 
