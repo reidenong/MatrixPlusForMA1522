@@ -31,4 +31,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - ```findEigVec(matrix A, int eigVal)``` : Returns a eigenvector for a given eigenvalue
 - ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with steps
 
-##
+### Sample Usage
+```
+
+```
