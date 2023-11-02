@@ -33,30 +33,8 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 
 
 
-### Sample Usage
-
-<details>
-<summary>Basic Matrix Manipulation</summary>
-
-> A = eye(2)
-
-A =
-
-     1     0
-     0     1
-
->> B = getRow(A, 1)
-
-B =
-
-     1     0
-
->> C = getCol(A, 2)
-
-C =
-
-     0
-     1
+### Method Documentation
+```autoSVD(matrix A)``` performs the Singular Value Decomposition algorithm and returns [U S Vt] where U is a orthogonal matrix, S is a diagonal matrix, and Vt is a orthogonal matrix. Orthogonality of the matrices can be verified by ```A'*A == I```.
 ```
-</details>
+```
 
