@@ -13,7 +13,16 @@ C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
 The latest version is LAscriptpack_v2, and it has the following methods:
 
 **Basic Matrix Manipulation**
-- ```getRow(matrix A, int i)``` : Returns a specific row of a matrix
+<details>
+<summary>```getRow(matrix A, int i)``` : Returns a specific row of a matrix</summary>
+<br>
+Sample Usage
+<br><br>
+<pre>
+</pre>
+</details>
+
+- 
 - ```getCol(matrix A, int i)``` : Returns a specific column of a matrix
 
 **Elementary Row Operations**
@@ -31,19 +40,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - ```findEigVec(matrix A, int eigVal)``` : Returns a eigenvector for a given eigenvalue
 - ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with steps
 
-<details>
-<summary>How do I dropdown?</summary>
-<br>
-This is how you dropdown.
-<br><br>
-<pre>
-&lt;details&gt;
-&lt;summary&gt;How do I dropdown?&lt;&#47;summary&gt;
-&lt;br&gt;
-This is how you dropdown.
-&lt;&#47;details&gt;
-</pre>
-</details>
+
 
 ### Sample Usage
 **Basic Matrix Manipulation**
