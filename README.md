@@ -24,6 +24,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 **Orthogonalisation and Diagonalization**
 - ```findDiag(matrix A)``` : Returns matrices [P D] where P * D * inv(P) = A
 - ```gramSchmidt(matrix A)``` : Returns matrix where columns form a orthonormal basis
+- ```leastSquare(matrix A, vector b)``` : Returns solution set of the least square soln of Ax = b
 
 **Eigenvectors**
 - ```findEigPoly(matrix A)``` : Returns the factorized characteristic polynomial of A
