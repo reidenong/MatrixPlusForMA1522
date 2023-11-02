@@ -14,7 +14,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 
 **Basic Matrix Manipulation**
 <details>
-<summary>```getRow(matrix A, int i)``` : Returns a specific row of a matrix</summary>
+<summary><pre>getRow(matrix A, int i)</pre> : Returns a specific row of a matrix</summary>
 <br>
 Sample Usage
 <br><br>
