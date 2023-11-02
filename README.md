@@ -9,6 +9,7 @@ For Windows users, place the scriptpack at
 C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
 ```
 <br />
+
 ## Usage Guide
 The latest version is LAscriptpack_v2, and it has the following methods:
 
