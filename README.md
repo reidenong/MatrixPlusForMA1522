@@ -11,7 +11,7 @@ C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
 
 ## Usage Guide
 The latest version is LAscriptpack_v2, and it has the following methods:
-```
+
 *Basic Matrix Manipulation*
 - getRow(matrix A, int i) : Returns a specific row of a matrix
 - getCol(matrix A, int i) : Returns a specific column of a matrix
@@ -30,5 +30,5 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - findEigSpace(matrix A, int eigVal) : Returns a basis for the Eigenspace of given Eigenvalue
 - findEigVec(matrix A, int eigVal) : Returns a eigenvector for a given eigenvalue
 - autoSVD(matrix A) : Returns the products [U S Vt] of Singular Value Decomposition of a matrix
-```
+
 
