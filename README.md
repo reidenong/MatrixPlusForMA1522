@@ -1,15 +1,15 @@
 # Matlab Scriptpack for Linear Algebra <br /> <img  src="https://img.shields.io/badge/MATLAB-R2023a-orange"  height="17"  />
 A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' for too be faster, with the exception of 1-2 implemented algorithms. Use at your own discretion!
-
-### Installation Guide
+<br />
+## Installation Guide
 The scriptpack should be placed in the MATLAB directory.
 
 For Windows users, place the scriptpack at
 ```
 C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
 ```
-
-### Usage Guide
+<br />
+## Usage Guide
 The latest version is LAscriptpack_v2, and it has the following methods:
 
 **Basic Matrix Manipulation**
