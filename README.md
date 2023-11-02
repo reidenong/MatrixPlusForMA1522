@@ -13,16 +13,7 @@ C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
 The latest version is LAscriptpack_v2, and it has the following methods:
 
 **Basic Matrix Manipulation**
-<details>
-<summary><pre>getRow(matrix A, int i)</pre> : Returns a specific row of a matrix</summary>
-<br>
-Sample Usage
-<br><br>
-<pre>
-</pre>
-</details>
-
-- 
+- ```getRow(matrix A, int i)``` : Returns a specific row of a matrix
 - ```getCol(matrix A, int i)``` : Returns a specific column of a matrix
 
 **Elementary Row Operations**
@@ -43,8 +34,12 @@ Sample Usage
 
 
 ### Sample Usage
-**Basic Matrix Manipulation**
-```
+
+<details>
+<summary>Basic Matrix Manipulation</summary>
+<br>
+<br><br>
+<pre>
 >> A = eye(2)
 
 A =
@@ -64,4 +59,10 @@ C =
 
      0
      1
+</pre>
+</details>
+
+**Basic Matrix Manipulation**
+```
+
 ```
