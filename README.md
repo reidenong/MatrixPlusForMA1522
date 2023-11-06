@@ -1,5 +1,5 @@
 # Matlab Scriptpack for Linear Algebra <br /> <img  src="https://img.shields.io/badge/MATLAB-R2023a-orange"  height="17"  />
-A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' for too be faster, with the exception of 1-2 implemented algorithms. Use at your own discretion!
+A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' for too be faster, with the exception of 1-2 implemented algorithms, namely ```autoSVD``` and ```checkDiag```, which are implementations of lecture slide algorithms. Use at your own discretion!
 <br />
 ## Installation Guide
 The scriptpack should be placed in the MATLAB directory.
@@ -23,6 +23,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 
 **Orthogonalisation and Diagonalization**
 - ```findDiag(matrix A)``` : Returns matrices [P D] where P * D * inv(P) = A
+- ```checkDiag(matrix A)``` : Check diagonalizability of matrix A with working shown
 - ```gramSchmidt(matrix A)``` : Returns matrix where columns form a orthonormal basis
 - ```leastSquare(matrix A, vector b)``` : Returns solution set of the least square soln of Ax = b
 
@@ -30,7 +31,7 @@ The latest version is LAscriptpack_v2, and it has the following methods:
 - ```findEigPoly(matrix A)``` : Returns the factorized characteristic polynomial of A
 - ```findEigSpace(matrix A, int eigVal)``` : Returns a basis for the Eigenspace of given Eigenvalue
 - ```findEigVec(matrix A, int eigVal)``` : Returns a eigenvector for a given eigenvalue
-- ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with steps
+- ```autoSVD(matrix A)``` : Performs the Singular Value Decomposition algorithm with working
 
 ### Method Documentation
 ```autoSVD(matrix A)``` performs the Singular Value Decomposition algorithm and returns ```[U S Vt]``` where U is a orthogonal matrix, S is a diagonal matrix, and Vt is a orthogonal matrix. Orthogonality of the matrices can be verified by ```A'*A == I```.
@@ -136,6 +137,37 @@ Vt =
 [ 2/3, -2/3, 1/3]
 ```
 
+<br />
+```checkDiag(matrix A)``` checks the diagonalizability of matrix ```A``` by checking if the sum of dimensions of eigenspaces is equal to the order of the given matrix. Shows working to the extent of each eigenspace.
+```
+A =
+
+     1    -3     3
+     3    -5     3
+     6    -6     4
+
+>> checkDiag(A)
+from given matrix, we find the following eigenvalues: 
+ 
+eigenvalues =
+ 
+[-2, -2, 4]
+ 
+order n square matrix A is diagonalizable iff the sum of geometric multiplicites = n
+ie.   sum_eigenvalue_k(dim(E_k)) == 3 
+ 
+eigenspace E_(-2) has dimension 2
+[1, -1]
+[1,  0]
+[0,  1]
+ 
+eigenspace E_(4) has dimension 1
+1/2
+1/2
+  1
+ 
+sum = 3 is equal to the order of matrix, thus given matrix is diagonalizable. 
+```
 <br />
 
 ```findEigSpace(matrix A, int EigVal)``` and ```findEigVec(matrix A, int eigVal)``` perform similar functions to find the space and vector associated with the eigenvalue respectively. ```findEigSpace``` uses ```null(sym(EigVal * I - A))``` to determine the Eigenspace, and findEigVec gives the first basis vector of the same Eigenspace.
