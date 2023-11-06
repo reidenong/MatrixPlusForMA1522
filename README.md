@@ -1,5 +1,5 @@
 # Matlab Scriptpack for Linear Algebra <br /> <img  src="https://img.shields.io/badge/MATLAB-R2023a-orange"  height="17"  />
-A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' for too be faster, with the exception of 1-2 implemented algorithms, namely ```autoSVD``` and ```checkDiag```, which are implementations of lecture slide algorithms. Use at your own discretion!
+A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' to be faster in exams, with the exception of 1-2 written algorithms, namely ```autoSVD``` and ```checkDiag```, which are implementations of lecture slide algorithms. Use at your own discretion!
 <br />
 ## Installation Guide
 The scriptpack should be placed in the MATLAB directory.
