@@ -138,6 +138,7 @@ Vt =
 ```
 
 <br />
+
 ```checkDiag(matrix A)``` checks the diagonalizability of matrix ```A``` by checking if the sum of dimensions of eigenspaces is equal to the order of the given matrix. Shows working to the extent of each eigenspace.
 ```
 A =
@@ -168,6 +169,7 @@ eigenspace E_(4) has dimension 1
  
 sum = 3 is equal to the order of matrix, thus given matrix is diagonalizable. 
 ```
+
 <br />
 
 ```findEigSpace(matrix A, int EigVal)``` and ```findEigVec(matrix A, int eigVal)``` perform similar functions to find the space and vector associated with the eigenvalue respectively. ```findEigSpace``` uses ```null(sym(EigVal * I - A))``` to determine the Eigenspace, and findEigVec gives the first basis vector of the same Eigenspace.
