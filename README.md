@@ -25,7 +25,7 @@ The key design principles of **Matrix+** are to
 
 **Matrix+** was made over the course of AY23/24 S1 for use in the NUS mod MA1522: Linear Algebra for Computing. Use at your own discretion!
 
-**Read the User Guide on how to use Matrix+ in irl contexts with past year exam questions*.*
+**Read the [User Guide](MatrixPlus_UserGuide_v1.pdf) on how to use Matrix+ in irl contexts with past year exam questions*.*
 
 ## Installation Guide
 The folder containing scripts should be placed in the MATLAB directory.
