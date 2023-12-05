@@ -16,7 +16,10 @@ Ex) Performing 3 row operations, then finding it's least Square
         .rowOp("R2 <-> R1")
 >> A.leastSquare(b)
 ```
-The key design principles of **Matrix+** is in (1) Making code easy to read and interpret, and (2) Cutting down implementation time for functions and (3) Providing a instant answer with workings whenever possible.
+The key design principles of **Matrix+** are to 
+(1) Make code easy to read and interpret
+(2) Cutting down implementation time for functions 
+(3) Provide a instant answer with workings whenever possible
 
 <br/> 
 
