@@ -28,11 +28,11 @@ The key design principles of **Matrix+** are to
 **Read the User Guide on how to use Matrix+ in irl contexts with past year exam questions*.*
 
 ## Installation Guide
-The scriptpack should be placed in the MATLAB directory.
+The folder containing scripts should be placed in the MATLAB directory.
 
 For Windows users, place the scriptpack at
 ```
-C:\Users\Your_Name\Documents\MATLAB\LAscriptpack_vX\
+C:\Users\Your_Name\Documents\MATLAB\MatrixPlus_vX\
 ```
 
 ## Usage Guide
