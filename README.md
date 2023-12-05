@@ -11,7 +11,7 @@ Eg) Performing 3 row operations, then finding it's Least
 >> null([A'*A A'*b])
 
 // Matrix+
->> A.rowOp("R2 += 4R1")      % easily chain functions!
+>> A.rowOp("R2 += 4R1")          % easily chain functions!
     .rowOp("R3 *= 3")
     .rowOp("R2 <-> R1")
     .leastSquare(b)
