@@ -11,14 +11,17 @@ Eg) Performing 3 row operations, then finding it's Least
 >> null([A'*A A'*b])
 
 // Matrix+
->> A = A.rowOp("R2 += 4R1")
+>> A = A.rowOp("R2 += 4R1")    % easily chain functions!
         .rowOp("R3 *= 3")
         .rowOp("R2 <-> R1")
         .leastSquare(b)
 ```
 The key design principles of **Matrix+** are to 
-(1) Make code easy to read and interpret,
+
+(1) Make code easy to read and interpret with function chaining,
+
 (2) Cut down implementation time for functions, 
+
 (3) Provide a instant answer with workings whenever possible.
 
 <br/> 
