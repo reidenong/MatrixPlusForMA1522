@@ -102,6 +102,9 @@ classdef Matrix < matlab.mixin.CustomDisplay
         function newMatrix = null(obj)
             newMatrix = Matrix.of(null(obj.matrix));
         end
+        function val = norm(obj)
+            val = sym(norm(obj.matrix));
+        end
 
         % RREF
         function newMatrix = rref(obj)
