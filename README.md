@@ -5,9 +5,9 @@ Eg) Performing 3 row operations, then finding it's Least
     Square solution for b:
 
 // Vanilla MatLab 
->> A(2, :) = A(2, :) - 4*A(1, :);    // R2 -> R2 + 4R1
->> A(3, :) = 3 * A(3, :)             // R3 -> 3*R3
->> A([1,2], :) = A([2,1],:)          // R2 <-> R1
+>> A(2, :) = A(2, :) - 4*A(1, :);      % R2 -> R2 + 4R1
+>> A(3, :) = 3 * A(3, :)               % R3 -> 3*R3
+>> A([1,2], :) = A([2,1],:)            % R2 <-> R1
 >> null([A'*A A'*b])
 
 // Matrix+
