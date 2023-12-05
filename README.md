@@ -17,13 +17,15 @@ Ex) Performing 3 row operations, then finding it's least Square
 >> A.leastSquare(b)
 ```
 The key design principles of **Matrix+** are to 
-(1) Make code easy to read and interpret
-(2) Cutting down implementation time for functions 
-(3) Provide a instant answer with workings whenever possible
+(1) Make code easy to read and interpret,
+(2) Cut down implementation time for functions, 
+(3) Provide a instant answer with workings whenever possible.
 
 <br/> 
 
 **Matrix+** was made over the course of AY23/24 S1 for use in the NUS mod MA1522: Linear Algebra for Computing. Use at your own discretion!
+
+**Read the User Guide on how to use Matrix+ in irl contexts with past year exam questions*.*
 
 ## Installation Guide
 The scriptpack should be placed in the MATLAB directory.
