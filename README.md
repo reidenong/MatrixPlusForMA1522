@@ -1,4 +1,8 @@
 # Matrix+ for MA1522 in MatLab <br /> <img  src="https://img.shields.io/badge/MATLAB-R2023a-orange"  height="17"  />
+In essence, **Matrix+** is a wrapper class in MatLab designed to greatly enhance the functionality of matrices in MatLab. By incorporating ready to use algorithms and refining existing functions, **Matrix+** is more efficient and intuitive, and helps improve performance under timed conditions such as exams. 
+<br/> 
+**Matrix+** was made over the course of AY23/24 S1 for use in the NUS mod MA1522: Linear Algebra for Computing. Use at your own discretion!
+
 A collection of macros, functions and algorithms in MATLAB for use in NUS MA1522 Linear Algebra, AY23/24 Sem 1. Majority of the functions here are more of 'macros' to be faster in exams, with the exception of 1-2 written algorithms, namely ```autoSVD``` and ```checkDiag```, which are implementations of lecture slide algorithms. Use at your own discretion!
 <br />
 ## Installation Guide
