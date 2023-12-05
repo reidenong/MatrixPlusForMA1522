@@ -14,7 +14,7 @@ Eg) Performing 3 row operations, then finding it's Least
 >> A = A.rowOp("R2 += 4R1")
         .rowOp("R3 *= 3")
         .rowOp("R2 <-> R1")
->> A.leastSquare(b)
+        .leastSquare(b)
 ```
 The key design principles of **Matrix+** are to 
 (1) Make code easy to read and interpret,
