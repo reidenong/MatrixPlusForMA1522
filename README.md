@@ -31,9 +31,10 @@ The key design principles of **Matrix+** are to
 **Read the [User Guide](MatrixPlus_UserGuide_v1.pdf) on how to use Matrix+ in irl contexts with past year exam questions*.*
 
 ## Installation Guide
-The folder containing scripts should be placed in the MATLAB directory.
+Matrix+ should be compatible with any device so long the MatLab version >= ```R2023a```.
+The folder containing the scripts should be placed in the MATLAB directory.
 
-For Windows users, place the scriptpack at
+For Windows users, this is at
 ```
 C:\Users\Your_Name\Documents\MATLAB\MatrixPlus_vX\
 ```
