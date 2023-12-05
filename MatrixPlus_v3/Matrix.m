@@ -34,6 +34,7 @@ classdef Matrix < matlab.mixin.CustomDisplay
     methods (Access = protected)
         % Override CustomDisplay
         function displayScalarObject(obj)
+            disp("M+")
             disp(obj.matrix)
         end
     end
@@ -98,6 +99,9 @@ classdef Matrix < matlab.mixin.CustomDisplay
         function newMatrix = adj(obj)
             newMatrix = Matrix.of(adjoint(obj.matrix));
         end
+        function newMatrix = null(obj)
+            newMatrix = Matrix.of(null(obj.matrix));
+        end
 
         % RREF
         function newMatrix = rref(obj)
@@ -160,7 +164,7 @@ classdef Matrix < matlab.mixin.CustomDisplay
             newMatrix = Matrix.of(rawA);
         end
         function newMatrix = gramSchmidtEcon(obj)
-            rawA = qr(sym(obj.matrix), 0);
+            rawA = gramSchmidtEcon(obj.matrix);
             newMatrix = Matrix.of(rawA);
         end
         function newMatrix = leastSquare(obj, b)
