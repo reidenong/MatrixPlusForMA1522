@@ -42,5 +42,4 @@ C:\Users\Your_Name\Documents\MATLAB\MatrixPlus_vX\
 I made this for fun after learning OOP/FP in CS2030s, but realised it was actually a pretty powerful tool, especially due to the ability to chain functions, which allows you to maintain easily readible and highly flexible code in an exam scenario. Main issues faced were in adapting to the MatLab syntax for OOP, as well as in exception handling for the various rubbish people could throw into the arguments. Areas to improve in are mostly in exception handling and greater flexibility/integration between the Matrix+ wrapper as well as vanilla MatLab matrices. 
 
 Feel free to email me about any bugs/improvements to be made.
-
-*Total code time: ~ 11 hours*
+Also star my repo, even if it didnt help you or you don't like it; i need more stars. 
