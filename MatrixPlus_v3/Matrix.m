@@ -28,6 +28,48 @@ classdef Matrix < matlab.mixin.CustomDisplay
         function obj = of(givenMatrix)
             obj = Matrix(givenMatrix);
         end
+
+        function help(obj)
+            disp(" ")
+            disp("Welcome to Matrix+!")
+            disp("To get started, create a Matrix+ Object using")
+            disp(" ")
+            disp("     A = Matrix(a)   where a is a matrix.")
+            disp(" ")
+            disp("Matrix Manipulation")
+            disp("  >> A.get() : returns a MatLab matrix of A")
+            disp("  >> A.getRow(int x) : returns row x of A")
+            disp("  >> A.getCol(int y) : returns row y of A")
+            disp("  >> A.rref() : returns the rref of A")
+            disp("  >> A.det() : returns the determinant of A")
+            disp("  >> A.inv() : returns the inverse of A")
+            disp("  >> A.rank() : returns rank of A")
+            disp("  >> A.null() : returns the nullspace of A")
+            disp("  >> A.adj() : returns the adjoint of A")
+            disp("  >> A.transpose() : returns the transpose of A")
+            disp("  >> A.sym() : returns the symbolic matrix of A")
+            disp("  >> A.norm() : returns the norm if A is a column vector")
+            disp(" ")
+            disp("Row Operations")
+            disp("  >> A.rowOp(string expression) : performs row operation on A")
+            disp('  Multiply: R1 -> 3R1 gives the expression "R1 *= 3"')
+            disp('  Swap:     R1 <-> R2 gives the expression "R1 <-> R2"')
+            disp('  Row Sum:  R1 += 3R2 gives the expression "R1 += 3R2"')
+            disp(" ")
+            disp("Orthogonal functions")
+            disp('  >> A.gramSchmidt() : extends A to a orthonormal basis for R^n')
+            disp('  >> A.gramSchmidtEcon() : Finds a orthonormal basis for A')
+            disp('  >> A.leastSquare(Matrix b) : Finds the least square solution set of Ax = b')
+            disp(" ")
+            disp("Eigenvalue and Eigenvectors")
+            disp('  >> A.findEigVals() : Returns sorted eigenvalues of A')
+            disp('  >> A.findEigPoly() : Returns characteristic polynomial of A')
+            disp('  >> A.findEigSpace(int eigVal) : Finds a basis for the eigenspace of eigVal')
+            disp('  >> [P D] = A.findDiag() : Finds matrices P, D such that A = P * D * P.inv()')
+            disp(' ')
+            disp("Decompositions and Factorizations ")
+            disp('  >> [U S V] = A.autoSVD() : Find U,S,V such that U * S * V = A, S diagonal, U, V orthogonal ')
+        end
     end
 
     % Overriding custom display Method from interface
@@ -92,7 +134,7 @@ classdef Matrix < matlab.mixin.CustomDisplay
         end
         function newMatrix = transpose(obj)
             newMatrix = Matrix.of(transpose(obj.matrix));
-        end
+        end 
         function D = det(obj)
             D = det(obj.sym().matrix);
         end
