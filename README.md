@@ -1,5 +1,5 @@
 # Matrix+ for MA1522 in MatLab <br /> <img  src="https://img.shields.io/badge/MATLAB-R2023a-orange"  height="17"  />
-In essence, **Matrix+** is a wrapper class in MatLab designed to greatly enhance the functionality of vanilla matrices. By incorporating ready to use algorithms and refining existing functions, **Matrix+** is more efficient and intuitive, and helps improve performance under timed conditions such as exams. 
+In essence, **Matrix+** is a wrapper class in MatLab designed to greatly enhance the functionality of its native matrices. By incorporating ready to use algorithms and refining existing functions, **Matrix+** is more efficient and intuitive, and helps improve performance under timed conditions such as exams. 
 ```
 Eg) Performing 3 row operations, then finding it's Least
     Square solution for b:
